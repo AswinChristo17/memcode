@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memcode"
+version = "0.1.0"
+description = "Persistent memory layer for OpenCode CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "chromadb>=0.5.0",
+    "click>=8.1",
+    "sentence-transformers>=3.0",
+    "rich>=13.0",
+    "python-dotenv>=1.0",
+    "groq>=0.9.0",
+]
+
+[project.scripts]
+memcode = "memcode.cli:cli"
+
+[tool.setuptools]
+packages = ["memcode"]
