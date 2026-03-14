@@ -2,6 +2,7 @@
 memcode/memory.py
 ChromaDB-backed memory store.
 Stores and retrieves past sessions using semantic vector search.
+This act as a memory Layer for memcode
 """
 import uuid
 import json
@@ -41,7 +42,7 @@ def store_session(user_message: str, assistant_response: str, metadata: Optional
 
     session_id = str(uuid.uuid4())
     timestamp = datetime.now().isoformat()
-
+    
     if is_personal:
         # Combine user message + assistant response for richer embedding coverage.
         # The user message contains the facts as explicitly stated ("my favorite novel
