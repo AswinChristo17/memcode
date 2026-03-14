@@ -39,7 +39,7 @@ def run(message: str, cwd: str, no_memory: bool, dry_run: bool, save_memory: boo
     """Run a message through OpenCode with memory context."""
 
     cwd = cwd or os.getcwd()
-
+  
     # Step 1: Build augmented prompt
     if no_memory:
         augmented_prompt = message
