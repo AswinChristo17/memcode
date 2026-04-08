@@ -19,7 +19,7 @@ User message → Memory Engine → Prompt Augmentation → OpenCode CLI → LLM 
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AswinChristo17/memcode.git
 cd memcode
 ```
 
